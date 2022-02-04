@@ -1,0 +1,58 @@
+document.querySelector('.btn--new').addEventListener('click', function () {
+
+    // Without constants   
+    // document.getElementById('current--0').textContent = '0';
+    // document.getElementById('current--1').textContent = '0';
+    // for (let i = 0; i < document.querySelectorAll('.current').length; i++) {
+    //     document.querySelectorAll('.current-score')[i].textContent = '0';
+    // }
+    // for (let i = 0; i < document.querySelectorAll('.score').length; i++) {
+    //     document.querySelectorAll('.score')[i].textContent = '0';
+    // }
+    // document.getElementById('score--0').textContent = '0';
+    // document.getElementById('score--1').textContent = '0';
+    score0.textContent = 0;
+    score1.textContent = 0;
+    player0.classList.add('player--active');
+    player1.classList.remove('player--active');
+    diceEl.classList.add('hidden');
+
+});
+
+
+// var imgArray = new Array();
+// imgArray[0] = new Image();
+// imgArray[0].src = 'dice-1.png';
+// imgArray[1] = new Image();
+// imgArray[1].src = 'dice-2.png';
+// imgArray[2] = new Image();
+// imgArray[2].src = 'dice-3.png';
+// imgArray[3] = new Image();
+// imgArray[3].src = 'dice-4.png';
+// imgArray[4] = new Image();
+// imgArray[4].src = 'dice-5.png';
+// imgArray[5] = new Image();
+// imgArray[5].src = 'dice-6.png';
+// let curScore;
+// document.querySelector('.btn--roll').addEventListener('click', function () {
+//     let randomNo = Math.trunc(Math.random() * 6);
+//     console.log(imgArray[randomNo]);
+//     console.log(randomNo);
+//     document.querySelector('.dice').src = imgArray[randomNo];//---displaying dice
+//     if (player0.classList.contains('player--active')) {
+//         curScore = Number(curScore0.textContent);
+//     }
+//     else {
+//         curScore = Number(curScore1.textcontent);
+//     }
+//     if (randomNo === 1) {
+//         curScore = 0;
+//         player0.classList.remove('player--active');
+//         player1.classList.add('player--active');
+//     }
+//     else {
+//         curScore += (randomNo + 1);
+//         document.getElementById('current--0').textContent = curScore;
+//     }
+
+// });
